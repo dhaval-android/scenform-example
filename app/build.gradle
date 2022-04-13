@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.xplora.roomtoexcel"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    implementation 'com.google.ar:core:1.30.0'
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.17.1'
+    // Alternatively, use ArSceneView without the UX dependency.
+    implementation 'com.google.ar.sceneform:core:1.17.1'
+    implementation 'com.google.ar.sceneform:animation:1.17.1'
+    implementation 'com.google.ar.sceneform:assets:1.17.1'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+}
+
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/models/cottage_obj.obj',
+        'default',
+        'sampledata/models/cottage_obj.sfa',
+        'src/main/res/raw/cottage_obj')
+
+sceneform.asset('sampledata/models/island_madeira.glb',
+        'default',
+        'sampledata/models/island_madeira.sfa',
+        'src/main/res/raw/island_madeira')
+sceneform.asset('sampledata/models/tshirt_glb.glb',
+        'default',
+        'sampledata/models/tshirt_glb.sfa',
+        'src/main/res/raw/tshirt_glb')
+
+sceneform.asset('sampledata/models/george_washington.glb',
+        'default',
+        'sampledata/models/george_washington.sfa',
+        'src/main/res/raw/george_washington')
+
+
+sceneform.asset('sampledata/models/astronaut.glb',
+        'default',
+        'sampledata/models/astronaut.sfa',
+        'src/main/res/raw/astronaut')
+
+
+sceneform.asset('sampledata/models/corset.glb',
+        'default',
+        'sampledata/models/corset.sfa',
+        'src/main/res/raw/corset')
+
+
+sceneform.asset('sampledata/models/boom_box.glb',
+        'default',
+        'sampledata/models/boom_box.sfa',
+        'src/main/res/raw/boom_box')
+
+sceneform.asset('sampledata/models/helmet.glb',
+        'default',
+        'sampledata/models/helmet.sfa',
+        'src/main/res/raw/helmet')
+
+
+sceneform.asset('sampledata/models/horse.glb',
+        'default',
+        'sampledata/models/horse.sfa',
+        'src/main/res/raw/horse')
+
+
+
+
+sceneform.asset('sampledata/models/lalten.glb',
+        'default',
+        'sampledata/models/lalten.sfa',
+        'src/main/res/raw/lalten')
+
+

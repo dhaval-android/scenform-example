@@ -1,0 +1,100 @@
+{
+  materials: [
+    {
+      name: 'Corset_O',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'e08d053d7e25ed97db28c7f47ef2d9a968b71323',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'e664061216f4d7a68a9808bd554988815068d14d',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: '7519814aeb7367e0c649e7e1e6cebb2f7cb7ce8e',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/corset.glb',
+    name: 'corset',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      name: 'e08d053d7e25ed97db28c7f47ef2d9a968b71323',
+      pipeline_name: '*0',
+    },
+    {
+      name: '7519814aeb7367e0c649e7e1e6cebb2f7cb7ce8e',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*1',
+    },
+    {
+      name: 'e664061216f4d7a68a9808bd554988815068d14d',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*2',
+    },
+  ],
+  version: '0.54:2',
+}

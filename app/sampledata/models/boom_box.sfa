@@ -1,0 +1,105 @@
+{
+  materials: [
+    {
+      name: 'BoomBox_Mat',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'c61e7db9e546ee759ef48b1f7b1163495e2a6c6d',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: '80dc3a26b0969b81e071510e2f337dac04396606',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: '98a21493492e2d1fe318160d1121a73d4de5106c',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: '9962dcdd31051eaafb13a70205e15d527bc4e19e',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/boom_box.glb',
+    name: 'boom_box',
+    recenter: 'root',
+    scale: 2.4810829999999999,
+  },
+  samplers: [
+    {
+      name: 'c61e7db9e546ee759ef48b1f7b1163495e2a6c6d',
+      pipeline_name: '*0',
+    },
+    {
+      name: '98a21493492e2d1fe318160d1121a73d4de5106c',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*1',
+    },
+    {
+      name: '80dc3a26b0969b81e071510e2f337dac04396606',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*2',
+    },
+    {
+      name: '9962dcdd31051eaafb13a70205e15d527bc4e19e',
+      pipeline_name: '*3',
+    },
+  ],
+  version: '0.54:2',
+}

@@ -1,0 +1,112 @@
+{
+  materials: [
+    {
+      name: 'Material_MR',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'a2f51a101ed776c5b0555e0b76d3be5b7d2005af',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: '15f7bd45bcfd5cf82485e90771de17a7f13e36e2',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: '9441a3dfb9faed3ecf7b4acfbff4588c68b7d192',
+        },
+        {
+          occlusion: 'bdfc2f8c144ebc5c2405689bccc2871c094701cc',
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: '55aeb2da37c41ae9ebe1ce0ab6f1826327dbc269',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/helmet.glb',
+    name: 'helmet',
+    recenter: 'root',
+    scale: 0.554948,
+  },
+  samplers: [
+    {
+      name: 'a2f51a101ed776c5b0555e0b76d3be5b7d2005af',
+      pipeline_name: '*0',
+    },
+    {
+      name: '9441a3dfb9faed3ecf7b4acfbff4588c68b7d192',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*1',
+    },
+    {
+      name: 'bdfc2f8c144ebc5c2405689bccc2871c094701cc',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*3',
+    },
+    {
+      name: '15f7bd45bcfd5cf82485e90771de17a7f13e36e2',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*2',
+    },
+    {
+      name: '55aeb2da37c41ae9ebe1ce0ab6f1826327dbc269',
+      pipeline_name: '*4',
+    },
+  ],
+  version: '0.54:2',
+}

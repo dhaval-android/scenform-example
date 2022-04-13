@@ -1,0 +1,100 @@
+{
+  materials: [
+    {
+      name: 'default',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: '41360723e46f89cf5db7633ed786fd6d0c30a115',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: '92235666647c306058910d704a1b8ba6e4fe6a94',
+        },
+        {
+          metallicFactor: 0.10000000000000001,
+        },
+        {
+          roughnessFactor: 0.80000000000000004,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: '4ffd1de0624d454e913f9794c6ae3c7aff2deede',
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/tshirt_glb.glb',
+    name: 'tshirt_glb',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      name: '41360723e46f89cf5db7633ed786fd6d0c30a115',
+      pipeline_name: '*0',
+    },
+    {
+      name: '4ffd1de0624d454e913f9794c6ae3c7aff2deede',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: '*2',
+    },
+    {
+      name: '92235666647c306058910d704a1b8ba6e4fe6a94',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '*1',
+    },
+  ],
+  version: '0.54:2',
+}
