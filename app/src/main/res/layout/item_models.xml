@@ -23,7 +23,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/ico_astronut"
+                android:src="@drawable/tshirt_gltf"
                 app:layout_constraintBottom_toTopOf="@+id/tvTitle"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
